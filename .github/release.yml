@@ -1,0 +1,32 @@
+changelog:
+  exclude:
+    labels:
+      - ignore
+      - dependencies
+      - skip-changelog
+  categories:
+    - title: Bug Fixes 🐛
+      labels:
+        - bug
+        - bugs
+        - fix
+        - fixes
+        - bugfix
+    - title: New Features 🚀
+      labels:
+        - feature
+        - features
+        - enhancement
+        - feat
+    - title: Performance Improvements ⚡
+      labels:
+        - performance
+        - perf
+        - optimization
+    - title: Documentation Updates 📚
+      labels:
+        - documentation
+        - docs
+    - title: Other Changes
+      labels:
+        - "*"
