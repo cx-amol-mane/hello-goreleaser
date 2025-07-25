@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	fmt.Println("Hello from fully automated GoReleaser!!")
+	name := "World"
+	if len(os.Args) > 1 {
+		name = os.Args[1]
+	}
+	fmt.Printf("Hello, %s! Welcome to GoReleaser! 🚀\n", name)
 }
