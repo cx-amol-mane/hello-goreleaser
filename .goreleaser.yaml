@@ -4,6 +4,7 @@ project_name: hello-goreleaser
 
 release:
   name_template: 'Amol {{.Version}}'
+  prerelease: auto
 
 before:
   hooks:
