@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	fmt.Println("Hello, GoReleaser! 🚀")
 	name := "World"
 	if len(os.Args) > 1 {
 		name = os.Args[1]
