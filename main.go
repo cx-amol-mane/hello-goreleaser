@@ -12,6 +12,7 @@ func main() {
 		name = os.Args[1]
 	}
 	fmt.Printf("Hello, %s! Welcome to GoReleaser! 🚀\n", name)
+	fmt.Println("This is a simple Go program that prints a greeting message.")
 }
 
 // This is a simple Go program that prints a greeting message.
