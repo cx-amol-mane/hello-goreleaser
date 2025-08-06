@@ -1,7 +1,7 @@
 name: publish-release
 
 on:
-  workflow_dispatch:  # Enables manual trigger from GitHub Actions tab
+  workflow_dispatch: 
 
 jobs:
   say-hello:
