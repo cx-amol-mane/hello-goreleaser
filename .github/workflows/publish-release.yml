@@ -10,3 +10,21 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello, World! 🎉"
+
+      - name: Get Current Date
+        id: current-date
+        run: echo "date=$(date +%Y-%m-%d)" >> $GITHUB_ENV
+
+      - name: Create New JIRA Release
+        uses: satak/webrequest-action@master
+        with:
+          url: ${{ secrets.JIRA_RELEASE_WEBHOOK_URL }}
+          method: POST
+          payload: |
+            {
+              "data": {
+                "version": "testversionjira",
+                "startDate": "${{ env.date }}",
+                "date": "${{ env.date }}"
+              }
+            }
