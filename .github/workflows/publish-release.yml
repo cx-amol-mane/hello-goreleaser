@@ -26,6 +26,7 @@ jobs:
               "data": {
                 "version": "testversionjira",
                 "startDate": "${{ env.date }}",
-                "date": "${{ env.date }}"
+                "date": "${{ env.date }}",
+                "released": true
               }
             }
