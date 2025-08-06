@@ -24,9 +24,10 @@ jobs:
           payload: |
             {
               "data": {
-                "version": "testversionjira_1",
+                "version": "testversionjira_2",
                 "startDate": "${{ env.date }}",
                 "date": "${{ env.date }}",
-                "status": "RELEASED"
+                "released": true,
+                "releaseDate": "${{ env.date }}"
               }
             }
